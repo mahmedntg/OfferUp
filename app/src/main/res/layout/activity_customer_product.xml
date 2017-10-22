@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainHomeColor"
+    tools:context="com.example.company.offerup.CustomerProductActivity">
+
+    <Spinner
+        android:id="@+id/productCategory"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+
+        android:prompt="@string/select_category"
+        android:spinnerMode="dialog" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/productCustomerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>

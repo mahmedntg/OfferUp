@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/checkOutItemMenu"
+        android:icon="@mipmap/cart_launcher"
+        android:title="Check Out"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/signOutItemMenu"
+        android:icon="@mipmap/logout_launcher"
+        android:title="Sign Out"
+        app:showAsAction="withText" />
+
+</menu>

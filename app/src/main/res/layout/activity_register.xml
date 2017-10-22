@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainHomeColor"
+    tools:context="com.example.company.offerup.RegisterActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:hint="enter your email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="enter your password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/placeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="enter restaurant name"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="enter your phone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:hint="enter your address"
+            android:maxLines="1"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:background="@color/mainBtnColor"
+            android:text="Register" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/signInTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Already Registered? Sing in here"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/signInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:background="@color/mainBtnColor"
+            android:text="Sign In" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/homeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:background="@color/mainBtnColor"
+            android:text="Home" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.widget.RelativeLayout>

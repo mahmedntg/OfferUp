@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "889579124768",
+    "firebase_url": "https://offerup-d52f2.firebaseio.com",
+    "project_id": "offerup-d52f2",
+    "storage_bucket": "offerup-d52f2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889579124768:android:c65792968da172fa",
+        "android_client_info": {
+          "package_name": "com.example.company.offerup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "889579124768-8drh95ba2sq4jnqj60f7fqe3m448pi53.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.company.offerup",
+            "certificate_hash": "a11b3ae784619be1179c56a7d85630e289b3172d"
+          }
+        },
+        {
+          "client_id": "889579124768-5brkiutf4lv8tu5a442535v21pmms6b0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD92gatxf8S9fpgLCMQa9dz3LYpyfvjbMc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "889579124768-5brkiutf4lv8tu5a442535v21pmms6b0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainHomeColor"
+    android:orientation="vertical"
+    tools:context="com.example.company.offerup.ProductCartActivity">
+
+    <Button
+        android:id="@+id/payBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:textAllCaps="false"
+        android:background="@color/mainBtnColor"
+        android:onClick="payBtnClicked"
+        android:text="Pay" />
+
+    <TextView
+        android:id="@+id/cartProductTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/payBtn"
+        android:layout_margin="10dp"
+        android:text="Total: 50.00 kwd"
+        android:textAlignment="center"
+        android:textColor="@color/productPrice"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cartProductsList"
+        android:layout_width="368dp"
+        android:layout_height="490dp"
+        android:layout_below="@+id/cartProductTotal"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
