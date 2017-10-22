@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/mainHomeColor"
     android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
     tools:context="com.example.company.offerup.LoginActivity">
 
     <android.support.v7.widget.AppCompatEditText
