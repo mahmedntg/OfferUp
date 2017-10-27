@@ -148,10 +148,10 @@ public class AddProduct extends AppCompatActivity {
                 ref.child("image").setValue(downloadUrl.toString());
                 ref.child("placeName").setValue(placeName);
                 ref.child("categoryName").setValue(productSipnner.getSelectedItem().toString());
-                startActivity(new Intent(AddProduct.this,ProductActivity.class));
+                progressDialog.dismiss();
+                startActivity(new Intent(AddProduct.this, ProductActivity.class));
             }
         });
-        progressDialog.dismiss();
     }
 
     public void imageBtnClicked(View view) {
@@ -168,12 +168,13 @@ public class AddProduct extends AppCompatActivity {
             imageBtn.setImageURI(uri);
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.option_menu, menu);
         menu.findItem(R.id.checkOutItemMenu).setVisible(false);
-        MenuBuilder menuBuilder=(MenuBuilder)menu;
+        MenuBuilder menuBuilder = (MenuBuilder) menu;
         menuBuilder.setOptionalIconsVisible(true);
         return true;
     }

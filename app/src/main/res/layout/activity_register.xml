@@ -23,8 +23,7 @@
             android:layout_marginTop="30dp"
             android:hint="enter your email"
             android:inputType="textEmailAddress"
-            android:maxLines="1"
-            android:textColor="@color/white" />
+            android:maxLines="1" />
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/passwordEditText"
@@ -34,8 +33,7 @@
             android:layout_marginRight="15dp"
             android:hint="enter your password"
             android:inputType="textPassword"
-            android:maxLines="1"
-            android:textColor="@color/white" />
+            android:maxLines="1" />
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/placeNameEditText"
@@ -44,8 +42,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:hint="enter restaurant name"
-            android:maxLines="1"
-            android:textColor="@color/white" />
+            android:maxLines="1" />
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/phoneEditText"
@@ -55,8 +52,7 @@
             android:layout_marginRight="15dp"
             android:hint="enter your phone"
             android:inputType="phone"
-            android:maxLines="1"
-            android:textColor="@color/white" />
+            android:maxLines="1" />
 
         <android.support.v7.widget.AppCompatEditText
             android:id="@+id/addressEditText"
@@ -65,17 +61,16 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:hint="enter your address"
-            android:maxLines="1"
-            android:textColor="@color/white" />
+            android:maxLines="1" />
 
         <android.support.v7.widget.AppCompatButton
             android:id="@+id/registerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:textAllCaps="false"
             android:background="@color/mainBtnColor"
-            android:text="Register" />
+            android:text="Register"
+            android:textAllCaps="false" />
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/signInTextView"
@@ -90,19 +85,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
-            android:textAllCaps="false"
             android:background="@color/mainBtnColor"
-            android:text="Sign In" />
-        <android.support.v7.widget.AppCompatButton
-            android:id="@+id/homeBtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:textAllCaps="false"
-            android:background="@color/mainBtnColor"
-            android:text="Home" />
-
-
+            android:text="Sign In"
+            android:textAllCaps="false" />
     </android.support.v7.widget.LinearLayoutCompat>
 
 </android.widget.RelativeLayout>

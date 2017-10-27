@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.example.company.offerup.utils.CartProductAdapter;
 import com.example.company.offerup.utils.DividerItemDecoration;
 import com.example.company.offerup.utils.Product;
+import com.example.company.offerup.utils.SharedPreferenceUtil;
 import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
@@ -88,6 +89,7 @@ public class ProductCartActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.signOutItemMenu:
                 FirebaseAuth.getInstance().signOut();
+                SharedPreferenceUtil.getInstance(ProductCartActivity.this).clearSharedPreferences();
                 startActivity(new Intent(this, LoginActivity.class));
                 return true;
             default:

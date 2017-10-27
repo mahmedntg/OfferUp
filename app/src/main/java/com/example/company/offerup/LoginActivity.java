@@ -108,7 +108,4 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-    public void cancelLoginClicked(View view) {
-        startActivity(new Intent(this, MainActivity.class));
-    }
 }

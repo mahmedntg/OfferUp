@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#111</color>
-    <color name="colorPrimaryDark">#FFF</color>
-    <color name="colorAccent">#ea3732</color>
+    <color name="colorPrimary">#ff6410</color>
+    <color name="colorPrimaryDark">#b77613</color>
+    <color name="colorAccent">#FF4081</color>
     <color name="bg_row_background">#fa315b</color>
     <color name="productDate">#999999</color>
     <color name="productName">#535353</color>
@@ -11,15 +11,15 @@
     <color name="productTotal">#222222</color>
     <color name="productPlaceName">#a9a9a9</color>
 
-    <color name="mainBtnColor">#f2fe71</color>
-    <color name="mainHomeColor">#0097a7</color>
+    <color name="mainBtnColor">#43b421</color>
+    <color name="mainHomeColor">#ffffff</color>
     <color name="bg_login">#26ae90</color>
     <color name="bg_register">#2e3237</color>
     <color name="bg_main">#428bca</color>
     <color name="white">#ffffff</color>
     <color name="input_login">#222222</color>
     <color name="input_login_hint">#999999</color>
-    <color name="input_register">#888888</color>
+    <color name="input_register">#ffffff</color>
     <color name="input_register_bg">#3b4148</color>
     <color name="input_register_hint">#5e6266</color>
     <color name="btn_login">#26ae90</color>

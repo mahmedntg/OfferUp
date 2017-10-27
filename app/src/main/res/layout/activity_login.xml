@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mainHomeColor"
-    android:orientation="vertical"
     android:layout_centerHorizontal="true"
     android:layout_centerVertical="true"
+    android:background="@color/mainHomeColor"
+    android:orientation="vertical"
     tools:context="com.example.company.offerup.LoginActivity">
 
     <android.support.v7.widget.AppCompatEditText
@@ -33,17 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:textAllCaps="false"
         android:background="@color/mainBtnColor"
-        android:text="Login" />
-    <Button
-        android:id="@+id/cancelLoginBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:textAllCaps="false"
-        android:onClick="cancelLoginClicked"
-        android:background="@color/mainBtnColor"
-        android:text="Cancel" />
+        android:text="Login"
+        android:textAllCaps="false" />
 
 </android.support.v7.widget.LinearLayoutCompat>

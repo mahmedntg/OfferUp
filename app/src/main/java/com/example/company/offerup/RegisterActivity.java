@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
     private Button registerBtn;
-    private Button signInBtn, homeBtn;
+    private Button signInBtn;
     private EditText emailEditText, placeNameEditText, phoneEditText, addressEditText;
     private EditText passwordEditText;
     private ProgressDialog progressDialog;
@@ -45,7 +45,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         firebaseAuth = FirebaseAuth.getInstance();
         registerBtn = (Button) findViewById(R.id.registerBtn);
         signInBtn = (Button) findViewById(R.id.signInBtn);
-        homeBtn = (Button) findViewById(R.id.homeBtn);
         emailEditText = (EditText) findViewById(R.id.emailEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordEditText);
         placeNameEditText = (EditText) findViewById(R.id.placeNameEditText);
@@ -60,7 +59,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         }
         registerBtn.setOnClickListener(this);
         signInBtn.setOnClickListener(this);
-        homeBtn.setOnClickListener(this);
     }
 
     @Override
@@ -70,9 +68,6 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         if (v == signInBtn) {
             Intent signInIntent = new Intent(this, LoginActivity.class);
             startActivity(signInIntent);
-        }
-        if (v == homeBtn) {
-            startActivity(new Intent(this, MainActivity.class));
         }
     }
 

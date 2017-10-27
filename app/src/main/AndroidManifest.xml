@@ -25,28 +25,28 @@
         </activity>
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/action_sign_in_register" android:parentActivityName=".MainActivity" />
         <activity
             android:name=".AddProduct"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/action_add_product" android:parentActivityName=".ProductActivity"/>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/action_sign_in_short" android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".ProductActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/action_product" android:parentActivityName=".LoginActivity"/>
         <activity
             android:name=".CustomerProductActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/action_product" android:parentActivityName=".LoginActivity"/>
         <activity
             android:name=".AddCustomerProductActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:label="@string/action_add_product" android:parentActivityName=".CustomerProductActivity"/>
         <activity
-            android:name=".ProductCartActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".ProductCartActivity" android:parentActivityName=".CustomerProductActivity"
+            android:label="@string/action_cart" />
         <activity
-            android:name=".PaymentActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".PaymentActivity" android:parentActivityName=".ProductCartActivity"
+            android:label="@string/action_payment"></activity>
     </application>
 
 </manifest>

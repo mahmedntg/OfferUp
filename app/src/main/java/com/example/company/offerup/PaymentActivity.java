@@ -67,6 +67,7 @@ public class PaymentActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.signOutItemMenu:
                 FirebaseAuth.getInstance().signOut();
+                SharedPreferenceUtil.getInstance(PaymentActivity.this).clearSharedPreferences();
                 startActivity(new Intent(this, LoginActivity.class));
                 return true;
             default:
