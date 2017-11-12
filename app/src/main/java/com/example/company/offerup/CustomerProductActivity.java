@@ -85,6 +85,7 @@ public class CustomerProductActivity extends AppCompatActivity {
                         viewHolder.setEndDate(model.getEndDate());
                         viewHolder.setPlaceName(model.getPlaceName());
                         final String productId = getRef(position).getKey().toString();
+                        viewHolder.deleteTextView.setVisibility(View.GONE);
                         viewHolder.mView.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
@@ -107,10 +108,11 @@ public class CustomerProductActivity extends AppCompatActivity {
 
     public static class ProductViewHolder extends RecyclerView.ViewHolder {
         View mView;
-
+        TextView deleteTextView;
         public ProductViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
+            deleteTextView= (TextView) mView.findViewById(R.id.deleteProduct);
         }
 
         public void setName(String name) {

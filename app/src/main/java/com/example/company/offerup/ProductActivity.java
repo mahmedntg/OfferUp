@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
@@ -30,7 +31,7 @@ public class ProductActivity extends AppCompatActivity {
     private DatabaseReference databaseReference;
     private FirebaseAuth.AuthStateListener authStateListener;
     private Button addProductBtn;
-
+    FirebaseRecyclerAdapter<Product, ProductViewHolder> adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,27 +64,37 @@ public class ProductActivity extends AppCompatActivity {
         super.onStart();
         firebaseAuth.addAuthStateListener(authStateListener);
         Query ref=databaseReference.orderByChild("userId").equalTo(firebaseAuth.getCurrentUser().getUid());
-        FirebaseRecyclerAdapter<Product, ProductViewHolder> adapter = new FirebaseRecyclerAdapter<Product, ProductViewHolder>(
+         adapter = new FirebaseRecyclerAdapter<Product, ProductViewHolder>(
                 Product.class, R.layout.product_items, ProductViewHolder.class,ref
         ) {
             @Override
-            protected void populateViewHolder(ProductViewHolder viewHolder, Product model, int position) {
+            protected void populateViewHolder(final ProductViewHolder viewHolder, Product model, final int position) {
                 viewHolder.setName(model.getName());
                 viewHolder.setImage(getApplicationContext(), model.getImage());
                 viewHolder.setPrice(model.getPrice());
                 viewHolder.setEndDate(model.getEndDate());
                 viewHolder.setPlaceName(model.getPlaceName());
+                viewHolder.deleteTextView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        int myPosition=viewHolder.getAdapterPosition();
+                        adapter.getRef(myPosition).removeValue();
+                        adapter.notifyItemRemoved(myPosition);
+                        adapter.notifyItemRangeChanged(myPosition,adapter.getItemCount());
+                    }
+                });
             }
         };
         productList.setAdapter(adapter);
     }
 
-    public static class ProductViewHolder extends RecyclerView.ViewHolder {
+    public static class ProductViewHolder extends RecyclerView.ViewHolder  {
         View mView;
-
+        TextView deleteTextView;
         public ProductViewHolder(View itemView) {
             super(itemView);
             mView = itemView;
+            deleteTextView= (TextView) mView.findViewById(R.id.deleteProduct);
         }
 
         public void setName(String name) {
